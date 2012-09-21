@@ -32,9 +32,9 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
         $this->setOrmDefaults($app);
         $this->loadDoctrineOrm($app);
 
-        if(isset($app['db.orm.class_path'])) {
+        /*if(isset($app['db.orm.class_path'])) {
             $app['autoloader']->registerNamespace('Doctrine\\ORM', $app['db.orm.class_path']);
-        }
+        }*/
     }
     
     /**
@@ -106,7 +106,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                         throw new \InvalidArgumentException(sprintf('"%s" is not a recognized driver', $entity['type']));
                         break;
                 }
-                $app['autoloader']->registerNamespace($entity['namespace'], $entity['path']);
+                //$app['autoloader']->registerNamespace($entity['namespace'], $entity['path']);
             }
             $config->setMetadataDriverImpl($chain);
 
