@@ -36,6 +36,14 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             $app['autoloader']->registerNamespace('Doctrine\\ORM', $app['db.orm.class_path']);
         }
     }
+    
+    /**
+     * Implementing empty abstract method
+     * or else we get fatal error
+     */
+    public function boot(Application $app)
+    {
+    }
 
     private function loadDoctrineOrm(Application $app)
     {
