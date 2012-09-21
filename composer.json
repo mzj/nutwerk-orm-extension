@@ -1,5 +1,5 @@
 {
-    "name": "MarkoZJovanovic/doctrine-orm-provider",
+    "name": "mzj/doctrine-orm-provider",
     "description": "Doctrine ORM provider for Silex",
     "keywords": ["silex", "doctrine", "orm", "database", "extension", "provider"],
     "homepage": "https://github.com/mjakubowski/nutwerk-orm-extension",
